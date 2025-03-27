@@ -1,0 +1,135 @@
+
+
+{
+  "data": [
+    {
+      "id": "e4d9fff3-48f2-4ece-a391-67cffdce12e0",
+      "title": "Sunday Prayer",
+      "audio_url": "https://d161fa2zahtt3z.cloudfront.net/audio/stitched_audio/sunday_prayer.mp3",
+      "slug": "",
+      "m3u8_url": "",
+      "image_url": "https://d161fa2zahtt3z.cloudfront.net/prarthanas/album_art/sunday_prayer.png",
+      "banner_image_url": "https://d161fa2zahtt3z.cloudfront.net/prarthanas/banner_images/sunday.png",
+      "duration": "13 mins",
+      "days": [
+        0
+      ],
+      "is_audio_available": true,
+      "ui_info": {
+        "image_url": "https://d161fa2zahtt3z.cloudfront.net/pvt/prarthanas/album_art/sunday_prayer.png?Expires=1740384021&Signature=erlOV89zYyWGhc-KLf~mT9txn1NdEk0aLtTHrx86qfZXHX1lnS7o0XQQvQXtKFjq0VfAhkBGgnyFUj0nBnEpv6HCLN3hDeYSQDb3-i6Dm4g2MhaTT2B8EgAXNg4hJmlOB3lBUuhrPMaHtj-NKoLtiKjkJD55o~lxhmQ~gPIjebOTea9OgGegmNknrBJ17kyZuVwZu6tFlZdyQNQLwgYqzRs~rwso2S16iLihA8yOBI8ESlhyMydsRtO4xMrgod2g-7HLpE-sOwYgfKZ0ho6OD3FSzpoQLCtzuZG-tIvZpXkOtfb~J3UnO4JQiVv-sLrPgA1irvPrXPLKN2EAunw2cw__&Key-Pair-Id=K2ZCYT9CD41NH6",
+        "banner_image_url": "https://d161fa2zahtt3z.cloudfront.net/pvt/prarthanas/banner_images/sunday.png?Expires=1740384021&Signature=37ODBovHm4-aciNc-hUokMY3YjbJRr9k33roPAzAwSvwuMYqFbHKxyV75WNoYE~HRCI9SvSoLrgIgyAvwr8405pUJEqFckK3HdOa97y90sA5LIVFyEx2haGz0vcOBMY~0-J8ddG7UADs5T13ovoHwEnY9FuhcHG31pK6sOuDFp6hco4vkS3P3bDC~KdtdGmr0ITh77Hn6jhadIyAZJxG8VwbpWAICwH2qODxq8HCc4CovlyucnSUZDTXIaqWtJEgEBF~86ZnooHKUw3rssMVn-SnnQ-A6N8XOLT6Q6soJLlyk3alWn192Hgqk72oIpv5ajcTk5c2T-ebEJoJP40BNA__&Key-Pair-Id=K2ZCYT9CD41NH6"
+      }
+    },
+    {
+      "id": "59d4d5b6-6bfd-4ff0-aa6c-bdbab88f1875",
+      "title": "Monday Prayer",
+      "audio_url": "https://d161fa2zahtt3z.cloudfront.net/audio/stitched_audio/monday_prayer.mp3",
+      "slug": "",
+      "m3u8_url": "",
+      "image_url": "https://d161fa2zahtt3z.cloudfront.net/prarthanas/album_art/monday_prayer.png",
+      "banner_image_url": "https://d161fa2zahtt3z.cloudfront.net/prarthanas/banner_images/monday.png",
+      "duration": "11 mins",
+      "days": [
+        1
+      ],
+      "is_audio_available": true,
+      "ui_info": {
+        "image_url": "https://d161fa2zahtt3z.cloudfront.net/pvt/prarthanas/album_art/monday_prayer.png?Expires=1740384021&Signature=Uss4pYo1AuzKReOZJLFhFYW2P19wZzt8zIYuKTzQst8bIKWwBlM0gLlt3Kp04Er6N6pjBwGT~-Ml5H6IylGdqJhe4uVU7qNWD55BktIf4wSOPToXTZl6VR0cs0llMG97QQC8WNqRPB03GczWn-hA4gQje19H62wxXJdIy0EeJG1uaq~XE5Jx-S3kpnFQ7Wg3MicvM~GeNMAtwPNoEO0IVFH791hfvUvKV6lms84-enVs2ncex4P0Z8YogB1YaOrPNUVxiRQHtxAf-P9fmZGT0oABjMIGxHt1ZRq7yVQjpaOmzSCoWS8637lKQl4m1cQJD8uHQzbO7ucjJMdL~7GVpg__&Key-Pair-Id=K2ZCYT9CD41NH6",
+        "banner_image_url": "https://d161fa2zahtt3z.cloudfront.net/pvt/prarthanas/banner_images/monday.png?Expires=1740384021&Signature=gSI0ueGkmmwUaoRGAEshlWOh5tDg2a2fx751bIeKdORbA3i2VO3pyFvoT~Vg-cPWTypfJBZbcPkWsvvpqU-SmP8jy3kKRn2wnLp1Pmj3fwAhWd836McqNBzPcmve-BeHEJpsimDN9aKHHsQPVezh8shxPzDLsPS6Fmmo~jTfTZZ-XMg4H0BboDRG05YNouRkVqmq1NsPtRqvNqojKurd6lyaFTNK71s~vmAkBpRBdlNpPBsSMnNRe~izqwotZ~RlBHLUT5Ph6~v8AbKMVYYMmhFKh06JcZUP89O9IIa6E3WSOP57GI1VN-82tYmER8tcwj7JGIz2tKlh1T7Ya4NIeA__&Key-Pair-Id=K2ZCYT9CD41NH6"
+      }
+    },
+    {
+      "id": "b01ec4bd-6efd-4d2d-b503-09192f274f13",
+      "title": "Tuesday Prayer",
+      "audio_url": "https://d161fa2zahtt3z.cloudfront.net/audio/stitched_audio/tuesday_prayer.mp3",
+      "slug": "",
+      "m3u8_url": "",
+      "image_url": "https://d161fa2zahtt3z.cloudfront.net/prarthanas/album_art/tuesday_prayer.png",
+      "banner_image_url": "https://d161fa2zahtt3z.cloudfront.net/prarthanas/banner_images/tuesday.png",
+      "duration": "10 mins",
+      "days": [
+        2
+      ],
+      "is_audio_available": true,
+      "ui_info": {
+        "image_url": "https://d161fa2zahtt3z.cloudfront.net/pvt/prarthanas/album_art/tuesday_prayer.png?Expires=1740384021&Signature=ZgSWKbjG-7cmm08vzwkYm-jo7rl37nZwr7JVPk7kSkRwxKVwGR8bxbsy9mPqiXNpHFVCCocuWE6p3NuWcMksHy8fSLi7hw3G-mt3IbpocMuBcppOCeGJaJdbA1Qdsw0l87gBLx6t-Gdj67DVoKxP20ZUlaLzX7T4u7zOL3GVDOjmEk3g3Uyc2mQ9hqFVV~NV5qdz5dpF0Mp9eH~cBwhjhsepgHswKKA-V248c8cbc-xPq~5p1M2K5eSvWadNhPE3sBpBln6S8pkijFpDSneCGy3508D-U-dGFyZtRLC3p5TQeUCKNixPwY-kCh6DCDb9vKPE51GyHFu~OnTsUHrQUw__&Key-Pair-Id=K2ZCYT9CD41NH6",
+        "banner_image_url": "https://d161fa2zahtt3z.cloudfront.net/pvt/prarthanas/banner_images/tuesday.png?Expires=1740384021&Signature=00cF7jUVdZ7mPhdoY3i18lT93GGHPgRtZ9JdOu05b92TeVcWvoRn-eTjJrohuScuFJiGl0G6ZdP1AFZWuajtgGfohbIvc4YPSyxVk4pJ90fFyJouuilM-VmRmcY0dABlhEHJdgetrrJjUHR-y5~e5doVqNZCLZPDAu~zk6D~6uqEeFmjfcwsZF~anznzr3P5AB3UMI~Ax-VHA17FNRO0pItWH7S4Li5p3TYP2A9JQh63EAqDCKQ3oNVFijydnhEK9LfJ~Ua1d73DjRipbWxTq6jrT7OBzEZiiDtDrv0FzjqZfl6DB~1Y1l0nHykkmwTBZ2BXY7ctgEMngrlEDah7QA__&Key-Pair-Id=K2ZCYT9CD41NH6"
+      }
+    },
+    {
+      "id": "593fdb0c-2216-4a81-aabf-1db39ec59c16",
+      "title": "Wednesday Prayer",
+      "audio_url": "https://d161fa2zahtt3z.cloudfront.net/audio/stitched_audio/wednesday_prayer.mp3",
+      "slug": "",
+      "m3u8_url": "",
+      "image_url": "https://d161fa2zahtt3z.cloudfront.net/prarthanas/album_art/wednesday_prayer.png",
+      "banner_image_url": "https://d161fa2zahtt3z.cloudfront.net/prarthanas/banner_images/wednesday.png",
+      "duration": "17 mins",
+      "days": [
+        3
+      ],
+      "is_audio_available": true,
+      "ui_info": {
+        "image_url": "https://d161fa2zahtt3z.cloudfront.net/pvt/prarthanas/album_art/wednesday_prayer.png?Expires=1740384021&Signature=4mjP6FaTg-~rn87s84dp7ObSsda7SWlo-lk8FIn2WGVD9cil35NHkuN7HIOvJsA218eH06h8tE8CxAzx181cdp4nC6Cm5VePtDq71YP62siVR8iDGEkPxeqyw-7QhcZkev50bBV-ewX6YeWewRrsirxUPaEJgnea9fcjK9LUOJXcRIGblBSIioGTNFVJXfDSnMWte4ojUr2qrGZNyvuXYeGuTT19GbjbJo3uQxpMr0YKVlYIn2P92jJLW0RalGoUDLe1nR4bTgg2UVP-asp2kOjZ7~ACl0zkSdPV0fAVZbcNsKrW70uGICrjlEoB4DbIQC2VTMYZkaJOgnr8yQxc0Q__&Key-Pair-Id=K2ZCYT9CD41NH6",
+        "banner_image_url": "https://d161fa2zahtt3z.cloudfront.net/pvt/prarthanas/banner_images/wednesday.png?Expires=1740384021&Signature=g4il9OHGJAho59cv9HFpf5DXtFiIbfnJjwfq8NcYfwLl2J36RcuATbzUYZNl2xhXkLTdNSTOWhZ01znY3W-BtqHPtbKslph7bDDYnUYdvGN5NkVuyShwOhsYR6poLhYWXZVTp1Z2jvDwl1deuxTKjM9XclO9immoshNMmeaMqVKnkjVIzZ57lk9bo9FmCjZ~C2frLj0ZjmgU8LA8Pca8dOKXHzww1w5s2UP5ffC3TAL3tWAk-6gsLfNc7liBItQ4OjJhXgQ3KXzgCPsEqjNNjh6tmHoxic9AFCctaJoH6a96nEzhAKF9X~hEQH12o0E-sCq750TrLM3FFQC6hdfqPw__&Key-Pair-Id=K2ZCYT9CD41NH6"
+      }
+    },
+    {
+      "id": "8064b421-7a22-40f5-89fa-96f849102517",
+      "title": "Thursday Prayer",
+      "audio_url": "https://d161fa2zahtt3z.cloudfront.net/audio/stitched_audio/thursday_prayer.mp3",
+      "slug": "",
+      "m3u8_url": "",
+      "image_url": "https://d161fa2zahtt3z.cloudfront.net/prarthanas/album_art/thursday_prayer.png",
+      "banner_image_url": "https://d161fa2zahtt3z.cloudfront.net/prarthanas/banner_images/thursday.png",
+      "duration": "11 mins",
+      "days": [
+        4
+      ],
+      "is_audio_available": true,
+      "ui_info": {
+        "image_url": "https://d161fa2zahtt3z.cloudfront.net/pvt/prarthanas/album_art/thursday_prayer.png?Expires=1740384021&Signature=bz6-JsYSc4m-MwYQbdK2shWnAC4ljOi260SeXTO8txdgqzgWIoZ7EoWThCS2~ayWH~3AgW3Ky5t~FJlTcuDu5ntKI-SkAoQH4J6qn1ktl2VVDGji8KGmKDOFGECpQ~F6sd9BMzVrDZQ9yudGk9SmL66tgfh~aJqO9KxdlbBaUoFpNb2IPFRFDgOxQwq4Df5JeV3TsRskdnHorNco3C2vOIVhR5fEVTOEvIGCE-z-I7ZLq6HUk~Mk0jAl1wsybNs1rqyCgsXu-0qAr~SMoBSx0LkiSl~vjBLdSrm69qr4wcc0nyLbJPLHBm6tAIPo~e6KZX0D5qPh~e1qbXSWZ-AF1g__&Key-Pair-Id=K2ZCYT9CD41NH6",
+        "banner_image_url": "https://d161fa2zahtt3z.cloudfront.net/pvt/prarthanas/banner_images/thursday.png?Expires=1740384021&Signature=Ax8MhyLyu2WL5iJjhkbHXxImen0uqKo~LkYCew-fz~ET4P1XnO7PT9D0DLEBCNRRfbzs9CQEaTHaYepmRz3ZCek51auVrr6AWKUt9laFVWOSlnxcopccyVotrCK4X0as9PZ5C2MJmOpnnyAzqBSEf1jcjCPlNT2B7qRGtC9EialfKc4ji3aZeJWyu2H7NSQZRyVnRFOpdh60AFNWVUraW04YNgx-2LJsscULRM4XXU1AkLNemfbTkBMfoAf2-ORBX4pYaAHbqJptkd4zjreko7j505Q9lRjifUaTgFWO3n1Sa0e9nzHsnqd0yvPXaaz0hjWAMgDAHVYddLQWiAsw1A__&Key-Pair-Id=K2ZCYT9CD41NH6"
+      }
+    },
+    {
+      "id": "06d28d15-eeb0-48b9-95d4-761d0b28215b",
+      "title": "Friday Prayer",
+      "audio_url": "https://d161fa2zahtt3z.cloudfront.net/audio/stitched_audio/friday_prayer.mp3",
+      "slug": "",
+      "m3u8_url": "",
+      "image_url": "https://d161fa2zahtt3z.cloudfront.net/prarthanas/album_art/friday_prayer.png",
+      "banner_image_url": "https://d161fa2zahtt3z.cloudfront.net/prarthanas/banner_images/friday.png",
+      "duration": "14 mins",
+      "days": [
+        5
+      ],
+      "is_audio_available": true,
+      "ui_info": {
+        "image_url": "https://d161fa2zahtt3z.cloudfront.net/pvt/prarthanas/album_art/friday_prayer.png?Expires=1740384021&Signature=jNU2CzUTm1RBvi4R~pKpX5c060HTWkWhzWfExl-jXByEXxaUZyMSBNumSh7clVu~-kdcerhqIModT7dynJjfPPKwQ-3YcS69mbxj1CN5OgHwV7yJkyPpZM~Z5~kOaPzF3xzX9du-YzyT3P8Pufw3ZJwUDEiax090gSMf8s03j-Pw9hDEMkj2ym34HxO1zQjR~iFfc3muhWLkZka6zBfqEy9zZMUoqFNQoqFr~up9~cu-AbIUDD80k8JzgB6HYoRIkunbnX3K0v3HxjWbcNckc1UUllqbm5uX9ZU3Yv-qj3PdIcZHDxDPPN9w1n~~lmzwUAj70273Mi5N7eocIX9cag__&Key-Pair-Id=K2ZCYT9CD41NH6",
+        "banner_image_url": "https://d161fa2zahtt3z.cloudfront.net/pvt/prarthanas/banner_images/friday.png?Expires=1740384021&Signature=pclWnuh8Q8bPHHEP2uI9YZOt8FvFavrQapCVbAHUQF4B7Yu56oS6WVwiXOj8Jf0b2UStzbteN9MXDrWgNDHHF7n6Tpisw15Ez4-Dsurbi6TJBIRacCKjb4PxBzrAlVKHoxHyr71r7s444Ov7ao4jttFhvlZoG8WuNokqZYFPiS9b43z8FrqIdY4Ax-adTv2SP9oJZ4GFQxzQt1tsCOUEpj0U0DQTM5mBfczHa716H6hwtoThQbVn-EyGlktMQRVFXQjsLqC~v88HsDccGzRsTENiB7XTyG9cxBiqa3svMPnVd8kEZguapPvUkNIC6dknTRvsr~d3yjo-f9YeNK5ymA__&Key-Pair-Id=K2ZCYT9CD41NH6"
+      }
+    },
+    {
+      "id": "11670988-854b-45eb-b07d-b5c781157ac3",
+      "title": "Saturday Prayer",
+      "audio_url": "https://d161fa2zahtt3z.cloudfront.net/audio/stitched_audio/saturday_prayer.mp3",
+      "slug": "",
+      "m3u8_url": "",
+      "image_url": "https://d161fa2zahtt3z.cloudfront.net/prarthanas/album_art/saturday_prayer.png",
+      "banner_image_url": "https://d161fa2zahtt3z.cloudfront.net/prarthanas/banner_images/saturday.png",
+      "duration": "10 mins",
+      "days": [
+        6
+      ],
+      "is_audio_available": true,
+      "ui_info": {
+        "image_url": "https://d161fa2zahtt3z.cloudfront.net/pvt/prarthanas/album_art/saturday_prayer.png?Expires=1740384021&Signature=HOSwLR6~bwOtNAI6ivtUW7RL98A8Q1lGYr47JDnLH~RPxUwKtWp4CWSB2k8Tl~CVHYQ69EvZbEO4-A1U5HPOuOM2R-QKD7-mXMoXC~Ve6gisd2ztQepBovHWTS6p8cUmkaGvrU89ey1rov5nlh9gNG-coSl2bEcmNlsFMu1eK4mLHeUEzv2eedGoZWNyspv2EPYKtj0J83QifH12RxFRYBd6V3vDHrMBQljVco7puAPyXElPxjqZ1Bq62Xe30zawoVr3O-Y3kZiQ~CSXeHAvC4c~QXipwcibSzzL~wzYwwRuyK67Rzrde1AIyxw6VhvDAejsoTXq2FRCoz~w-U2CLw__&Key-Pair-Id=K2ZCYT9CD41NH6",
+        "banner_image_url": "https://d161fa2zahtt3z.cloudfront.net/pvt/prarthanas/banner_images/saturday.png?Expires=1740384021&Signature=CjP2K9LWNpC2WEYbK7PwLg83YHABXPIKs4pM0e3mZ7rc8j-kgLTCYopL4kPcqXkOByNjEVSqvsRM~Fu8TFBZIJLKITqbjm5h~4ibefT7n~~xAN1nwW3xP50eEBzbmEekchExkPv1xEdi1tP-JoYjUOB3EYevhRhJBoiPCUqXoDCspBMr1LFtQ9HrDq-tL0ayDFgdxT~nfxr41q7W2ZaIgqdNeMQPb8UtB4tGPOobSihESXMSeSm5YNK9otJKXKfv~ODrSU9ix~EJAvkNYBkDOkl2BCNu7N64cbZlc3W5UDY1Wh5d~fQQXeB9SUz8GQCo5HLh0psTZprved6G9RkXiw__&Key-Pair-Id=K2ZCYT9CD41NH6"
+      }
+    }
+  ],
+  "message": "Successful",
+  "status": 200
+}
+

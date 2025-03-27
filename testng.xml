@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/Users/apple/IdeaProjects/Dharmayana-Service">
+        <classes>
+            <class name="FestivalServices.FestivalList">
+                <methods>
+                    <include name="FestivalListTest"/>
+                </methods>
+            </class>
+            <class name="FestivalServices.PopularFestival">
+                <methods>
+                    <include name="popularFestivalTest"/>
+                </methods>
+            </class>
+            <class name="FestivalServices.SearchFestival">
+                <methods>
+                    <include name="testsearchFestival"/>
+                    <include name="testValidSearch"/>
+                    <include name="specialCharacterKeywordTest"/>
+                    <include name="emptyKeyWord"/>
+                    <include name="testInvalidKeywordSearch"/>
+                    <include name="testMissingKeyword"/>
+                </methods>
+            </class>
+            <class name="FestivalServices.UpcomingFestival">
+                <methods>
+                    <include name="upcomingFestivalTest"/>
+                </methods>
+            </class>
+            <class name="FestivalServices.UpcomingVrat">
+                <methods>
+                    <include name="UpcomingVratTest"/>
+                </methods>
+            </class>
+            <class name="FestivalServices.Vrat">
+                <methods>
+                    <include name="vratTest"/>
+                </methods>
+            </class>
+            <class name="PanchangaServices.AllServices">
+                <methods>
+                    <include name="allServicesTest"/>
+                </methods>
+            </class>
+            <class name="PanchangaServices.AppConfig">
+                <methods>
+                    <include name="AppConfigTest"/>
+                    <include name="ApproxTimeTest"/>
+                    <include name="consultaion_ApproxTimeTest"/>
+                    <include name="deity_details_promotionTest"/>
+                    <include name="deity_details_promotion_TitleTest"/>
+                    <include name="deity_details_promotion_FeatureTest"/>
+                    <include name="deity_details_promotion_Feature1Test"/>
+                    <include name="festivalTypeTest"/>
+                    <include name="home_pageDailyPredictionTest"/>
+                    <include name="ObservanceFilterTest"/>
+                    <include name="supportedCountryCodeTest"/>
+                    <include name="supportedCountry_Alfa_CodeTest"/>
+                    <include name="withoutMasaTest"/>
+                    <include name="withoutSamvatTest"/>
+                    <include name="withoutMasa_SamvatTest"/>
+                </methods>
+            </class>
+            <class name="PanchangaServices.ArticleRecommendation">
+                <methods>
+                    <include name="articleRecommendationTest"/>
+                    <include name="titleTest"/>
+                    <include name="dataLengthTest"/>
+                    <include name="url2Test"/>
+                    <include name="idTest"/>
+                    <include name="url1Test"/>
+                    <include name="withoutmasa_samvatTest"/>
+                </methods>
+            </class>
+            <class name="PanchangaServices.BlogRecommendation">
+                <methods>
+                    <include name="blogRecommendationTest"/>
+                    <include name="statusCodeTest"/>
+                    <include name="titleTest"/>
+                    <include name="dataLengthest"/>
+                    <include name="UrlTest"/>
+                    <include name="thumbnail_imageTest"/>
+                    <include name="withoutMasa_samvatTest"/>
+                    <include name="InvalidMasa_samvatTest"/>
+                </methods>
+            </class>
+            <class name="PanchangaServices.DailyPredction">
+                <methods>
+                    <include name="dailyPredction"/>
+                </methods>
+            </class>
+            <class name="PanchangaServices.GetKundli">
+                <methods>
+                    <include name="getkundli"/>
+                </methods>
+            </class>
+            <class name="PanchangaServices.GetRashiNakshtra">
+                <methods>
+                    <include name="getRashiNakshtra"/>
+                </methods>
+            </class>
+            <class name="PanchangaServices.HomePageService">
+                <methods>
+                    <include name="homePageServiceTest"/>
+                    <include name="displayNameTest"/>
+                    <include name="weblinkTest"/>
+                    <include name="headerTest"/>
+                    <include name="lengthOfAllServicesTest"/>
+                    <include name="lengthOfHomePage_service_list_Test"/>
+                    <include name="withoutMasa_samvatTest"/>
+                </methods>
+            </class>
+            <class name="PanchangaServices.LocationByKeyWord">
+                <methods>
+                    <include name="locationByKeyWord"/>
+                    <include name="dataLengthTest"/>
+                    <include name="dataLabelTest"/>
+                    <include name="placeIdTest"/>
+                    <include name="searchByKeywordFygugihoTest"/>
+                    <include name="withoutKeywordTest"/>
+                    <include name="searchByKeyword_dTest"/>
+                    <include name="withoutKeyword_masa_samvatTest"/>
+                    <include name="searchByKeywordIntager_vlueTest"/>
+                    <include name="searchBySpecialCharacterTest"/>
+                    <include name="searchByAnyletter_SpecialCharacterTest"/>
+                    <include name="searchBykeywordUndercoreTest"/>
+                </methods>
+            </class>
+            <class name="PanchangaServices.LocationSearchByKeyword">
+                <methods>
+                    <include name="validlocationSearchTest"/>
+                    <include name="keywordSearchSuggestionTest"/>
+                    <include name="invalidSearchTest"/>
+                    <include name="SearchBySpecialCharacterTest"/>
+                    <include name="SearchByWithoutKewordTest"/>
+                </methods>
+            </class>
+            <class name="PanchangaServices.Monthlycalender">
+                <methods>
+                    <include name="details"/>
+                </methods>
+            </class>
+            <class name="PanchangaServices.Notification">
+                <methods>
+                    <include name="notificatiom"/>
+                </methods>
+            </class>
+            <class name="PanchangaServices.Observance">
+                <methods>
+                    <include name="observance"/>
+                </methods>
+            </class>
+            <class name="PanchangaServices.PanchangaDetails">
+                <methods>
+                    <include name="panchangaDetailsTest"/>
+                    <include name="tithilengthTest"/>
+                    <include name="nakshtraDetailsTest"/>
+                    <include name="AynaDetailsTest"/>
+                    <include name="Paksha_v1DetailsTest"/>
+                    <include name="masaDetailsTest"/>
+                    <include name="MuhuratAuspiciousDetailsTest"/>
+                    <include name="MuhuraInAuspiciousDetailsTest"/>
+                    <include name="RituDetailsTest"/>
+                    <include name="VaaraDetailsTest"/>
+                    <include name="KaranaDetailsTest"/>
+                    <include name="ObservancesDetailsTest"/>
+                    <include name="YogaDetailsTest"/>
+                    <include name="PrarthanaDetailsTest"/>
+                    <include name="MoonArrayLengthTest"/>
+                    <include name="TithinameTest"/>
+                    <include name="NakshtranameTest"/>
+                    <include name="Paksha_v1NameTest"/>
+                    <include name="MoonRiseTimeTest"/>
+                    <include name="MasaNameTest"/>
+                    <include name="SakaNameTest"/>
+                    <include name="MuhuratAusNameTest"/>
+                    <include name="RituSub_textTest"/>
+                    <include name="vaaraSub_textTest"/>
+                    <include name="karanaNameTest"/>
+                    <include name="YogaKeyTest"/>
+                    <include name="PrarthanaTitleTest"/>
+                    <include name="rashiMoonNameTest"/>
+                    <include name="NakshtraNameTest"/>
+                    <include name="SunRiseTimeTest"/>
+                    <include name="MasaPurnimaTest"/>
+                    <include name="YearTest"/>
+                    <include name="MuhuratAus1NameTest"/>
+                    <include name="VaaraNameTest"/>
+                    <include name="Prarthana0TitleTest"/>
+                    <include name="Rashi0MonNameTest"/>
+                    <include name="NakshtraName1Test"/>
+                    <include name="TithiName1Test"/>
+                    <include name="Paksha_v1Name1Test"/>
+                    <include name="MoonSetTimeTest"/>
+                    <include name="MasaName1Test"/>
+                    <include name="yearsNameTest"/>
+                    <include name="MuhuratInAusNameTest"/>
+                    <include name="RituSub_text1Test"/>
+                    <include name="VaaraName1Test"/>
+                    <include name="KaranaKeyTest"/>
+                    <include name="PrarthanaTitle0Test"/>
+                    <include name="RashiMoonNameTest"/>
+                    <include name="TithiNameTest"/>
+                    <include name="MasaAmantaNameTest"/>
+                    <include name="PrarthanaTitle1Test"/>
+                    <include name="RashiMoonName1Test"/>
+                    <include name="TithiName2Test"/>
+                    <include name="MasaName2Test"/>
+                    <include name="YearsKaliNameTest"/>
+                    <include name="VaaraName2Test"/>
+                    <include name="KaranaNameTest"/>
+                    <include name="PrarthanaTitle2Test"/>
+                </methods>
+            </class>
+            <class name="PanchangaServices.Promotions">
+                <methods>
+                    <include name="promotonTest"/>
+                    <include name="ImageUrlTest"/>
+                    <include name="SponsoredTest"/>
+                    <include name="Sponsored1Test"/>
+                    <include name="withoutMasaTest"/>
+                    <include name="dataLengthTest"/>
+                    <include name="withoutMasa_samvatTest"/>
+                    <include name="withoutmasa_samvatTest"/>
+                </methods>
+            </class>
+            <class name="PanchangaServices.ReverseGeoCoding">
+                <methods>
+                    <include name="reversegeocodingTest"/>
+                    <include name="AreanameTest"/>
+                    <include name="LatTest"/>
+                    <include name="LongTest"/>
+                    <include name="TimezoneTest"/>
+                    <include name="OffsetTest"/>
+                    <include name="Areaname1Test"/>
+                    <include name="Lat1Test"/>
+                    <include name="Long1Test"/>
+                    <include name="timeZone1Test"/>
+                    <include name="offset1Test"/>
+                    <include name="Areaname2Test"/>
+                    <include name="Lat2Test"/>
+                    <include name="Long2Test"/>
+                    <include name="timeZone2Test"/>
+                    <include name="offset2Test"/>
+                    <include name="Areaname3Test"/>
+                    <include name="Lat3Test"/>
+                    <include name="long3Test"/>
+                    <include name="timeZone3Test"/>
+                    <include name="offset3Test"/>
+                    <include name="Areaname4Test"/>
+                    <include name="Lat4Test"/>
+                    <include name="long4Test"/>
+                    <include name="timeZone4Test"/>
+                    <include name="offset4Test"/>
+                    <include name="withoutLatTest"/>
+                    <include name="withoutLongTest"/>
+                    <include name="withoutLatLongMasaTest"/>
+                </methods>
+            </class>
+            <class name="PanchangaServices.SearchLoaction">
+                <methods>
+                    <include name="location"/>
+                </methods>
+            </class>
+            <class name="PanchangaServices.SolarEclipse">
+                <methods>
+                    <include name="solareclipse"/>
+                </methods>
+            </class>
+            <class name="PrarthanaServices.DailyPrarthna5">
+                <methods>
+                    <include name="dailyPrarthna"/>
+                </methods>
+            </class>
+            <class name="PrarthanaServices.DevtaOfTheDay">
+                <methods>
+                    <include name="prarthnadietiesTodays"/>
+                </methods>
+            </class>
+            <class name="PrarthanaServices.PlayPrarthana">
+                <methods>
+                    <include name="playPrarthanaTest"/>
+                </methods>
+            </class>
+            <class name="PrarthanaServices.PrarthanaByDevta">
+                <methods>
+                    <include name="prathnaByDietisTest"/>
+                    <include name="dataLength_changesParamTest"/>
+                    <include name="PrarthanaCountTest"/>
+                    <include name="ui_infoImageTest"/>
+                    <include name="withoutMasa_samvatTest"/>
+                    <include name="withoutMasa_samvatPrarthna_countTest"/>
+                    <include name="changingparamPrarthana_countTest"/>
+                    <include name="withoutSamvatTest"/>
+                </methods>
+            </class>
+            <class name="PrarthanaServices.PrarthanaByFestival">
+                <methods>
+                    <include name="prarthanaByFestivalTest"/>
+                </methods>
+            </class>
+            <class name="PrarthanaServices.PrarthanaDetails">
+                <methods>
+                    <include name="responseBodyTest"/>
+                    <include name="withoutSamvatTest"/>
+                    <include name="titleTest"/>
+                    <include name="shlokTest"/>
+                    <include name="aval_languageTest"/>
+                </methods>
+            </class>
+            <class name="PrarthanaServices.PrarthanaForPanchangaToday">
+                <methods>
+                    <include name="prarthanaByPanchangaTodayTest"/>
+                    <include name="titleTest"/>
+                    <include name="withoutmasa_samvatTest"/>
+                    <include name="withoutmasa_samvat_IdTest"/>
+                    <include name="audio_availableTest"/>
+                    <include name="audioTest"/>
+                    <include name="invalidTimestampTest"/>
+                    <include name="withoutTimestampTest"/>
+                </methods>
+            </class>
+            <class name="PrarthanaServices.PrarthanaList">
+                <methods>
+                    <include name="dailyPrarthnaTest"/>
+                    <include name="titleTest"/>
+                    <include name="dataLengthTest"/>
+                    <include name="durationTest"/>
+                    <include name="audioTest"/>
+                    <include name="banner_imageTest"/>
+                    <include name="withoutTypeParamTest"/>
+                    <include name="differnetTypeParamTest"/>
+                    <include name="withoutMasa_samvatTest"/>
+                    <include name="withoutMasa_samvat_TypeParamTest"/>
+                </methods>
+            </class>
+            <class name="PrarthanaServices.PrarthanaSearchByKeyword">
+                <methods>
+                    <include name="prarthanaSearchByKeywordTest"/>
+                </methods>
+            </class>
+            <class name="PrarthanaServices.PrarthnaByPurpose">
+                <methods>
+                    <include name="prarthnaBYPurposeTest"/>
+                    <include name="durationTest"/>
+                    <include name="dataLengthTest"/>
+                    <include name="titleTest"/>
+                    <include name="duration1Test"/>
+                    <include name="title1Test"/>
+                    <include name="dataLength_changesParamTest"/>
+                </methods>
+            </class>
+            <class name="PrarthanaServices.RecentPrarthana">
+                <methods>
+                    <include name="recentPrarthanaTest"/>
+                    <include name="statusTest"/>
+                    <include name="without_languageTest"/>
+                    <include name="shlokTest"/>
+                    <include name="shlokexplanationTest"/>
+                    <include name="shlok_explanationTest"/>
+                    <include name="shlok1Test"/>
+                    <include name="intPrayer_lan_shlokTest"/>
+                    <include name="intLanguageshlok_explanationTest"/>
+                    <include name="invalid_lan_shlokTest"/>
+                    <include name="invalid_language_shlok_explanationTest"/>
+                </methods>
+            </class>
+            <class name="PrarthanaServices.SabheeDevta">
+                <methods>
+                    <include name="prarthanaV2Dieties"/>
+                </methods>
+            </class>
+            <class name="Shubhkarya.PrarthanaApiTest">
+                <methods>
+                    <include name="testValidRequestWithDifferentLanguage"/>
+                    <include name="testValidRequestWithDifferentMasaAndSamvat"/>
+                    <include name="testCaseSensitivity"/>
+                    <include name="testWhitespaceHandling"/>
+                    <include name="testInvalidPrarthanaID"/>
+                    <include name="testInvalidLanguage"/>
+                    <include name="testInvalidMasaAndSamvat"/>
+                    <include name="testMissingParametersOnlyPrayerLanguage"/>
+                    <include name="testEmptyQueryParams"/>
+                    <include name="testExtraUnknownParameter"/>
+                    <include name="testIncorrectHTTPMethod"/>
+                    <include name="testInvalidDataTypes"/>
+                    <include name="testMalformedURL"/>
+                    <include name="testSpecialCharactersInQuery"/>
+                    <include name="testVeryLongInput"/>
+                    <include name="testMultipleValuesForParameters"/>
+                    <include name="testEmptyResponseHandling"/>
+                    <include name="testAPIDowntimeSimulation"/>
+                    <include name="testSlowResponseHandling"/>
+                    <include name="testNoMasaProvided"/>
+                    <include name="testNoSamvatProvided"/>
+                    <include name="testNoParamsProvided"/>
+                </methods>
+            </class>
+            <class name="Shubhkarya.ShubhKaryaCatalogue">
+                <methods>
+                    <include name="catalogueTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
