@@ -255,16 +255,4 @@ public class PrarthanaByFestival {
         Assert.assertEquals(response.getStatusCode(),200,"status code mismatch");
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
 }

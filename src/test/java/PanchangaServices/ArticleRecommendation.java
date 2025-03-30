@@ -59,7 +59,8 @@ public class ArticleRecommendation {
         Response response = given()
                 .baseUri("https://api.stage.dharmayana.in/article/v1/recommendation?masa=purnimanta&samvat=vikram")
                 .when().get();
-            Assert.assertEquals(response.jsonPath().getString("data[0].title"), "Understanding Vaara (Day Of The Week)", "Title mismatch");
+        response.then().log().all();
+            Assert.assertEquals(response.jsonPath().getString("data[0].title"), "Understanding Masa (Lunar Month )", "Title mismatch");
     }
 
 

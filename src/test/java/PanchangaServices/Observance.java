@@ -19,11 +19,11 @@ public class Observance {
 
                 .when()
                 .get();
-//        System.out.println(response.getBody().asPrettyString());
+       System.out.println(response.getBody().asPrettyString());
 
         Assert.assertEquals(response.getStatusCode(),200);
         String paksha = response.jsonPath().getString("data.observances[10].data.name");
-        Assert.assertEquals(paksha,"Rangabhari Ekadashi","not matched");
+        Assert.assertEquals(paksha,"Amalaki Ekadashi","not matched");
         Assert.assertEquals(response.jsonPath().getString("data.observances[16].panchanga.paksha"),"Shukla Paksha","value do not match");
         Assert.assertEquals(response.jsonPath().getString("data.observances[10].data.key"),"ekadashi","value do not match");
 

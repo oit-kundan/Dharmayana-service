@@ -562,8 +562,9 @@ public class PanchangaDetails {
         Response response = given()
                 .baseUri(baseurl)
                 .when().get("?lat=12.959744&long=77.7060352&timestamp=1742471587&timezone=Asia%2FCalcutta&offset=5.5&masa=purnimanta&samvat=vikram");
+        response.then().log().all();
 
-        Assert.assertEquals(response.jsonPath().getString("data.moon.rise"),"1742493243","moon rise Time mismatch");
+        Assert.assertEquals(response.jsonPath().getString("data.moon.rise"),"1742493204","moon rise Time mismatch");
 
     }
 

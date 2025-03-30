@@ -62,7 +62,7 @@ public class SearchFestival {
     }
 
     @Test
-    public void testValidSearch() {
+    public void testValidSearchTest() {
 
         Response response = given()
                 .queryParam("keyword", "diwali")
@@ -107,7 +107,7 @@ public class SearchFestival {
 
 
     @Test
-    public void emptyKeyWord() {
+    public void emptyKeyWordTest() {
         Response response = given()
                 .queryParam("keyword", " ")
                 .when()
@@ -118,7 +118,7 @@ public class SearchFestival {
 
 
     @Test
-    public void testInvalidKeywordSearch() {
+    public void testInvalidKeywordSearchTest() {
         Response response = given()
                 .queryParam("keyword", "@#$%^&*")
                 .when()
@@ -137,11 +137,173 @@ public class SearchFestival {
 
 
     @Test
-    public void testMissingKeyword() {
+    public void name_KeywordTest() {
         Response response = given()
                 .when()
                 .get(base_Url);
 
-        Assert.assertEquals(response.getStatusCode(), 500, "Expected 500 Bad Request for missing keyword");
+        Assert.assertEquals(response.getStatusCode(), 500, "expected 500 Bad Request for missing keyword");
+    }
+
+    @Test
+    public void testMissingKeywordTest() {
+        Response response = given()
+
+                .queryParam("lat", "25.6727062")
+                .queryParam("long", "85.83619279999999")
+                .queryParam("timestamp", "1741349532")
+                .queryParam("timezone", "Asia%2FCalcutta")
+                .queryParam("keyword", "diwali")
+                .queryParam("offset", "5.5")
+                .queryParam("masa", "purnimanata")
+                .queryParam("samvat", "vikram")
+                .when()
+                .get(base_Url);
+        response.then().log().all();
+
+        Assert.assertEquals(response.getStatusCode(), 200, "status code mismatch");
+        Assert.assertEquals(response.jsonPath().getString("data.festivals[0].name"),"Naraka Chaturdashi","festival name mismatch");
+    }
+
+    @Test
+    public void festivalIdTest() {
+        Response response = given()
+
+                .queryParam("lat", "25.6727062")
+                .queryParam("long", "85.83619279999999")
+                .queryParam("timestamp", "1741349532")
+                .queryParam("timezone", "Asia%2FCalcutta")
+                .queryParam("keyword", "diwali")
+                .queryParam("offset", "5.5")
+                .queryParam("masa", "purnimanata")
+                .queryParam("samvat", "vikram")
+                .when()
+                .get(base_Url);
+        response.then().log().all();
+
+        Assert.assertEquals(response.getStatusCode(), 200, "status code mismatch");
+        Assert.assertEquals(response.jsonPath().getString("data.festivals[1].id"),"ef0dbfba-2e6a-4eff-a446-2e85786e7417","festival id mismatch");
+    }
+
+    @Test
+    public void festivalDateTest() {
+        Response response = given()
+
+                .queryParam("lat", "42.3555076")
+                .queryParam("long", "-71.0565364")
+                .queryParam("timestamp", "1741349532")
+                .queryParam("timezone", "Asia%2FCalcutta")
+                .queryParam("keyword", "Chhath")
+                .queryParam("offset", "5.5")
+                .queryParam("masa", "purnimanata")
+                .queryParam("samvat", "vikram")
+                .when()
+                .get(base_Url);
+        response.then().log().all();
+
+        Assert.assertEquals(response.getStatusCode(), 200, "status code mismatch");
+        Assert.assertEquals(response.jsonPath().getString("data.festivals[1].date"),"1761503400","festival date mismatch");
+    }
+
+    @Test
+    public void festivalDate1Test() {
+        Response response = given()
+
+                .queryParam("lat", "42.3555076")
+                .queryParam("long", "-71.0565364")
+                .queryParam("timestamp", "2153470405")
+                .queryParam("timezone", "America%2FNew_York")
+                .queryParam("keyword", "Chhath")
+                .queryParam("offset", "5.5")
+                .queryParam("masa", "purnimanata")
+                .queryParam("samvat", "vikram")
+                .when()
+                .get(base_Url);
+        response.then().log().all();
+
+        Assert.assertEquals(response.getStatusCode(), 200, "status code mismatch");
+        Assert.assertEquals(response.jsonPath().getString("data.festivals[1].date"),"1761503400","festival date mismatch");
+    }
+
+    @Test
+    public void invalidKeywordTest() {
+        Response response = given()
+
+                .queryParam("lat", "42.3555076")
+                .queryParam("long", "-71.0565364")
+                .queryParam("timestamp", "2153470405")
+                .queryParam("timezone", "America%2FNew_York")
+                .queryParam("keyword", "afdgdf")
+                .queryParam("offset", "5.5")
+                .queryParam("masa", "purnimanata")
+                .queryParam("samvat", "vikram")
+                .when()
+                .get(base_Url);
+        response.then().log().all();
+
+        Assert.assertEquals(response.getStatusCode(), 200, "status code mismatch");
+        Assert.assertEquals(response.jsonPath().getString("data.observances"),null,"festival date mismatch");
+    }
+
+    @Test
+    public void intKeywordTest() {
+        Response response = given()
+
+                .queryParam("lat", "42.3555076")
+                .queryParam("long", "-71.0565364")
+                .queryParam("timestamp", "2153470405")
+                .queryParam("timezone", "America%2FNew_York")
+                .queryParam("keyword", "afdgdf")
+                .queryParam("offset", "5.5")
+                .queryParam("masa", "purnimanata")
+                .queryParam("samvat", "vikram")
+                .when()
+                .get(base_Url);
+        response.then().log().all();
+
+        Assert.assertEquals(response.getStatusCode(), 200, "status code mismatch");
+        Assert.assertEquals(response.jsonPath().getString("data.observances"),null,"festival date mismatch");
+    }
+
+    @Test
+    public void specialCharKeywordTest() {
+        Response response = given()
+
+                .queryParam("lat", "42.3555076")
+                .queryParam("long", "-71.0565364")
+                .queryParam("timestamp", "2153470405")
+                .queryParam("timezone", "America%2FNew_York")
+                .queryParam("keyword", "afdgdf")
+                .queryParam("offset", "5.5")
+                .queryParam("masa", "purnimanata")
+                .queryParam("samvat", "vikram")
+                .when()
+                .get(base_Url);
+        response.then().log().all();
+
+        Assert.assertEquals(response.getStatusCode(), 200, "status code mismatch");
+        Assert.assertEquals(response.jsonPath().getString("data.observances"),null,"festival date mismatch");
+    }
+
+    @Test
+    public void dataLengthTest() {
+        Response response = given()
+
+                .queryParam("lat", "42.3555076")
+                .queryParam("long", "-71.0565364")
+                .queryParam("timestamp", "2153470405")
+                .queryParam("timezone", "America%2FNew_York")
+                .queryParam("keyword", "Chhath")
+                .queryParam("offset", "5.5")
+                .queryParam("masa", "purnimanata")
+                .queryParam("samvat", "vikram")
+                .when()
+                .get(base_Url);
+        response.then().log().all();
+
+        Assert.assertEquals(response.getStatusCode(), 200, "status code mismatch");
+        JSONObject jsonResponse = new JSONObject(response.getBody().asString());
+        JSONArray dataArray = jsonResponse.getJSONObject("data").getJSONArray("festivals");
+        Assert.assertEquals(dataArray.length(),3,"data length mismtach");
     }
 }

@@ -140,4 +140,164 @@ public class UpcomingVrat {
 
 
     }
+
+
+    @Test
+    public void dateTest() {
+
+        Response response = given()
+                .baseUri("https://api.stage.dharmayana.in/v1/observances")
+                .queryParam("lat","25.6727062")
+                .queryParam("long","85.83619279999999")
+                .queryParam("timestamp","1742545705")
+                .queryParam("timezone","Asia%2FCalcutta")
+                .queryParam("offset","5.5")
+                .queryParam("direction","forward")
+                .queryParam("limit","10")
+                .queryParam("filter","all")
+                .queryParam("masa","purnimanata")
+                .queryParam("samvat","vikram")
+                        .when().get();
+
+        Assert.assertEquals(response.jsonPath().getString("data.observances[0].date"),"1742581800","Observances date mismatch");
+        Assert.assertEquals(response.getStatusCode(),200,"status code mismatch");
+    }
+
+
+    @Test
+    public void panchangaTithiTest() {
+
+        Response response = given()
+                .baseUri("https://api.stage.dharmayana.in/v1/observances")
+                .queryParam("lat","25.6727062")
+                .queryParam("long","85.83619279999999")
+                .queryParam("timestamp","1742545705")
+                .queryParam("timezone","Asia%2FCalcutta")
+                .queryParam("offset","5.5")
+                .queryParam("direction","forward")
+                .queryParam("limit","10")
+                .queryParam("filter","all")
+                .queryParam("masa","purnimanata")
+                .queryParam("samvat","vikram")
+                .when().get();
+
+        Assert.assertEquals(response.jsonPath().getString("data.observances[0].panchanga.tithi[0].name"),"Ashtami","Panchanga tithi name mismatch");
+        Assert.assertEquals(response.getStatusCode(),200,"status code mismatch");
+    }
+
+
+    @Test
+    public void masaNameTest() {
+
+        Response response = given()
+                .baseUri("https://api.stage.dharmayana.in/v1/observances")
+                .queryParam("lat","25.6727062")
+                .queryParam("long","85.83619279999999")
+                .queryParam("timestamp","1742545705")
+                .queryParam("timezone","Asia%2FCalcutta")
+                .queryParam("offset","5.5")
+                .queryParam("direction","forward")
+                .queryParam("limit","10")
+                .queryParam("filter","all")
+                .queryParam("masa","purnimanata")
+                .queryParam("samvat","vikram")
+                .when().get();
+
+        Assert.assertEquals(response.jsonPath().getString("data.observances[0].panchanga.masa.amanta"),"Phalguna","Panchanga tithi name mismatch");
+        Assert.assertEquals(response.getStatusCode(),200,"status code mismatch");
+    }
+
+
+    @Test
+    public void nextPageTest() {
+
+        Response response = given()
+                .baseUri("https://api.stage.dharmayana.in/v1/observances")
+                .queryParam("lat","25.6727062")
+                .queryParam("long","85.83619279999999")
+                .queryParam("timestamp","1333016005")
+                .queryParam("timezone","Asia%2FCalcutta")
+                .queryParam("offset","5.5")
+                .queryParam("direction","forward")
+                .queryParam("limit","10")
+                .queryParam("filter","all")
+                .queryParam("masa","purnimanata")
+                .queryParam("samvat","vikram")
+                .when().get();
+        response.then().log().all();
+
+        Assert.assertEquals(response.jsonPath().getString("data.observances"),null,"Panchanga tithi name mismatch");
+        Assert.assertEquals(response.getStatusCode(),200,"status code mismatch");
+    }
+
+    @Test
+    public void can_fetch_nextTest() {
+
+        Response response = given()
+                .baseUri("https://api.stage.dharmayana.in/v1/observances")
+                .queryParam("lat","25.6727062")
+                .queryParam("long","85.83619279999999")
+                .queryParam("timestamp","1333016005")
+                .queryParam("timezone","Asia%2FCalcutta")
+                .queryParam("offset","5.5")
+                .queryParam("direction","forward")
+                .queryParam("limit","10")
+                .queryParam("filter","all")
+                .queryParam("masa","purnimanata")
+                .queryParam("samvat","vikram")
+                .when().get();
+        response.then().log().all();
+
+        Assert.assertEquals(response.jsonPath().getString("data.can_fetch_next"),"false","Panchanga tithi name mismatch");
+        Assert.assertEquals(response.getStatusCode(),200,"status code mismatch");
+    }
+
+
+    @Test
+    public void observance_can_fetch_nextTest() {
+
+        Response response = given()
+                .baseUri("https://api.stage.dharmayana.in/v1/observances")
+                .queryParam("lat","42.3555076")
+                .queryParam("long","-71.0565364")
+                .queryParam("timestamp","1333016005")
+                .queryParam("timezone","America%2FNew_York")
+                .queryParam("offset","-4.0")
+                .queryParam("direction","forward")
+                .queryParam("limit","10")
+                .queryParam("filter","all")
+                .queryParam("masa","purnimanata")
+                .queryParam("samvat","vikram")
+                .when().get();
+        response.then().log().all();
+
+        Assert.assertEquals(response.jsonPath().getString("data.can_fetch_next"),"false","Panchanga tithi name mismatch");
+        Assert.assertEquals(response.getStatusCode(),200,"status code mismatch");
+    }
+
+    @Test
+    public void statusTest() {
+
+        Response response = given()
+                .baseUri("https://api.stage.dharmayana.in/v1/observances")
+                .queryParam("lat","42.3555076")
+                .queryParam("long","-71.0565364")
+                .queryParam("timestamp","2153470405")
+                .queryParam("timezone","America%2FNew_York")
+                .queryParam("offset","-4.0")
+                .queryParam("direction","forward")
+                .queryParam("limit","10")
+                .queryParam("filter","all")
+                .queryParam("masa","purnimanata")
+                .queryParam("samvat","vikram")
+                .when().get();
+        response.then().log().all();
+
+        Assert.assertEquals(response.jsonPath().getString("data.can_fetch_next"),"false","Panchanga tithi name mismatch");
+        Assert.assertEquals(response.getStatusCode(),200,"status code mismatch");
+    }
+
+
+
+
 }

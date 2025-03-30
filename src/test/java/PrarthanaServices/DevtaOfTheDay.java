@@ -66,4 +66,19 @@ public class DevtaOfTheDay {
 
 
     }
+
+    @Test
+    public void statusTest() {
+
+        Response response = given()
+                .baseUri("https://api.stage.dharmayana.in/prarthana/v1/deities/today")
+                .when().get("?masa=purnimanta&samvat=Vikram");
+        response.then().log().all();
+
+
+        Assert.assertEquals(response.getStatusCode(), 200, "status code mismatch");
+    }
+
+
+
 }

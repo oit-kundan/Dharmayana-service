@@ -16,7 +16,7 @@ public class DailyPredction {
         Response response = RestAssured
                 .given()
                 .baseUri("https://api.stage.dharmayana.in")
-                .queryParam("date", "11/03/2025")
+                .queryParam("date", "30/03/2025")
                 .queryParam("rashi", "aries")
                 .log().all()
 
@@ -38,7 +38,7 @@ public class DailyPredction {
         Assert.assertEquals(rashifal, "Mesha Rashi", "Value is incorrect");
 
 
-        Assert.assertEquals(date, "11 March 2025", "date not matched");
+        Assert.assertEquals(date, "30 March 2025", "date not matched");
         Assert.assertNotNull(response.jsonPath().getString("data.description"), "Description is Null");
         Assert.assertNotNull(response.jsonPath().getString("data.banner_image_url"), "Description is Null");
 

@@ -119,4 +119,151 @@ public class FestivalList {
 
 
     }
+
+    @Test
+    public void dataKeyTest() {
+
+        Response response = given()
+
+                .baseUri("https://api.stage.dharmayana.in/v1/observances")
+                .queryParam("lat","25.6727062")
+                .queryParam("long","85.83619279999999")
+                .queryParam("timestamp","1741263132")
+                .queryParam("timezone","Asia%2FCalcutta")
+                .queryParam("offset","5.5")
+                .queryParam("direction","forward")
+                .queryParam("limit","30")
+                .queryParam("region","br")
+                .queryParam("masa","purnimanata")
+                .queryParam("samvat","vikram")
+
+                        .when().get();
+
+
+
+
+
+        Assert.assertEquals(response.getStatusCode(), 200, "status code mismatch");
+        Assert.assertEquals(response.jsonPath().getString("data.observances[0].data.key"),"ekadashi","key value mismatch");
+
+    }
+
+    @Test
+    public void withoutregionTest() {
+
+        Response response = given()
+
+                .baseUri("https://api.stage.dharmayana.in/v1/observances")
+                .queryParam("lat", "25.6727062")
+                .queryParam("long", "85.83619279999999")
+                .queryParam("timestamp", "1741263132")
+                .queryParam("timezone", "Asia%2FCalcutta")
+                .queryParam("offset", "5.5")
+                .queryParam("direction", "forward")
+                .queryParam("limit", "30")
+
+                .queryParam("masa", "purnimanata")
+                .queryParam("samvat", "vikram")
+
+                .when().get();
+
+
+        Assert.assertEquals(response.getStatusCode(), 200, "status code mismatch");
+        Assert.assertEquals(response.jsonPath().getString("data.observances[0].data.name"), "Melukote Vairamudi Utsava", "name value mismatch");
+
+    }
+
+    @Test
+    public void changelat_longkeyTest() {
+
+        Response response = given()
+
+                .baseUri("https://api.stage.dharmayana.in/v1/observances")
+                .queryParam("lat", "52.9783773")
+                .queryParam("long", "-0.0420111")
+                .queryParam("timestamp", "1741263132")
+
+
+                .when().get();
+
+
+        Assert.assertEquals(response.getStatusCode(), 200, "status code mismatch");
+        Assert.assertEquals(response.jsonPath().getString("data.observances[0].data.name"), "Melukote Vairamudi Utsava", "name value mismatch");
+
+    }
+
+
+    @Test
+    public void timestampTest() {
+
+        Response response = given()
+
+                .baseUri("https://api.stage.dharmayana.in/v1/observances")
+                .queryParam("lat", "52.9783773")
+                .queryParam("long", "-0.0420111")
+                .queryParam("timestamp", "1333016005")
+                .queryParam("timezone", "Asia%2FCalcutta")
+                .queryParam("offset", "7.0")
+                .queryParam("direction", "forward")
+                .queryParam("region","br")
+
+                .queryParam("limit", "30")
+
+                .queryParam("masa", "purnimanata")
+                .queryParam("samvat", "vikram")
+
+
+
+
+                .when().get();
+
+
+        Assert.assertEquals(response.getStatusCode(), 200, "status code mismatch");
+        Assert.assertEquals(response.jsonPath().getString("data.observances"), null, "observance mismatch");
+
+    }
+
+    @Test
+    public void timestamp1Test() {
+
+        Response response = given()
+
+                .baseUri("https://api.stage.dharmayana.in/v1/observances")
+                .queryParam("lat", "52.9783773")
+                .queryParam("long", "-0.0420111")
+                .queryParam("timestamp", "1333016005")
+                .queryParam("timezone", "Asia%2FCalcutta")
+                .queryParam("offset", "7.0")
+                .queryParam("direction", "forward")
+                .queryParam("region","br")
+
+                .queryParam("limit", "30")
+
+                .queryParam("masa", "purnimanata")
+                .queryParam("samvat", "vikram")
+
+
+
+
+                .when().get();
+        response.then().log().all();
+
+
+        Assert.assertEquals(response.getStatusCode(), 200, "status code mismatch");
+        Assert.assertEquals(response.jsonPath().getString("data.can_fetch_next"), "false", "observance mismatch");
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

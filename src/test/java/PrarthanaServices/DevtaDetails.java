@@ -7,7 +7,9 @@ import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class SabheeDevta {
+import static io.restassured.RestAssured.given;
+
+public class DevtaDetails {
 
     @Test
     void prarthanaV2Dieties() {
@@ -81,5 +83,84 @@ public class SabheeDevta {
     }
 
 
-        
+    @Test
+    public void statusTest() {
+
+        Response response = given()
+                .baseUri("https://api.stage.dharmayana.in/prarthana/v2/deities/055d329e-eabd-403e-9f41-2912c278f978")
+                .when().get("?masa=purnimanta&samvat=Vikram");
+        response.then().log().all();
+
+
+        Assert.assertEquals(response.getStatusCode(),200,"status code mismatch");
+    }
+
+    @Test
+    public void titleTest() {
+
+        Response response = given()
+                .baseUri("https://api.stage.dharmayana.in/prarthana/v2/deities/055d329e-eabd-403e-9f41-2912c278f978")
+                .when().get("?masa=purnimanta&samvat=Vikram");
+        response.then().log().all();
+
+
+        Assert.assertEquals(response.getStatusCode(),200,"status code mismatch");
+        Assert.assertEquals(response.jsonPath().getString("data.title"),"Ganesha","Title mismatch");
+    }
+
+    @Test
+    public void aliases_v1Test() {
+
+        Response response = given()
+                .baseUri("https://api.stage.dharmayana.in/prarthana/v2/deities/055d329e-eabd-403e-9f41-2912c278f978")
+                .when().get("?masa=purnimanta&samvat=Vikram");
+        response.then().log().all();
+
+
+        Assert.assertEquals(response.getStatusCode(),200,"status code mismatch");
+        Assert.assertEquals(response.jsonPath().getString("data.aliases_v1[1]"),"Vinayaka","Alises_v1 mismatch");
+    }
+
+    @Test
+    public void prarthanaTitleTest() {
+
+        Response response = given()
+                .baseUri("https://api.stage.dharmayana.in/prarthana/v2/deities/055d329e-eabd-403e-9f41-2912c278f978")
+                .when().get("?masa=purnimanta&samvat=Vikram");
+        response.then().log().all();
+
+
+        Assert.assertEquals(response.getStatusCode(),200,"status code mismatch");
+        Assert.assertEquals(response.jsonPath().getString("data.prarthanas[0].title"),"Ganesh Gayatri Mantra","Prarthana title mismatch");
+    }
+
+    @Test
+    public void audio_availableTest() {
+
+        Response response = given()
+                .baseUri("https://api.stage.dharmayana.in/prarthana/v2/deities/055d329e-eabd-403e-9f41-2912c278f978")
+                .when().get("?masa=purnimanta&samvat=Vikram");
+        response.then().log().all();
+
+
+        Assert.assertEquals(response.getStatusCode(),200,"status code mismatch");
+        Assert.assertEquals(response.jsonPath().getString("data.prarthanas[0].is_audio_available"),"true","Prarthana title mismatch");
+    }
+
+    @Test
+    public void prarthanaTitle1Test() {
+
+        Response response = given()
+                .baseUri("https://api.stage.dharmayana.in/prarthana/v2/deities/055d329e-eabd-403e-9f41-2912c278f978")
+                .when().get("?masa=purnimanta&samvat=Vikram");
+        response.then().log().all();
+
+
+        Assert.assertEquals(response.getStatusCode(),200,"status code mismatch");
+        Assert.assertEquals(response.jsonPath().getString("data.prarthanas[1].title"),"Vakratunda Ganesha Mantra","Prarthana title mismatch");
+    }
+
+
+
+
 }
