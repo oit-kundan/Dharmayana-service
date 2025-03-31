@@ -1,1 +1,1 @@
-updated panchanga prarthana festival
+updated panchanga,prarthana,festival
